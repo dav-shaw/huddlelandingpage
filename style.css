@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    background: hsl(257, 40%, 49%);
+    background-image: url(images/bg-desktop.svg);
+    display: block;
+    box-sizing: border-box;
+}
+
+.logo img {
+    padding: 1rem;
+    width: 200px;
+}
+
+.landing-area {
+    display: flex;
+}
+
+.landing-image img {
+    max-width: 600px;
+    padding: 3rem;
+    align-items: center;
+    transition: transform .2s;
+}
+
+.landing-image img:hover {
+    transform: scale(1.05);
+}
+
+.landing-text {
+    padding: 4rem;
+    align-items: left;
+    max-width: 400px;
+    vertical-align: middle;
+}
+
+.landing-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
+
+.landing-text p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.landing-text button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: hsl(257, 40%, 49%);
+    background: white;
+    border: none;
+    border-radius: 20px;
+    padding: .5rem 2rem;
+    margin: 1rem;
+    transition: color .2s;
+}
+
+.landing-text button:hover {
+    color: white;
+    background: hsl(300, 69%, 71%);
+}
+
+.socials {
+    margin: 1rem;
+    text-align: right;
+}
+
+.socials i {
+    color: white;
+    padding: .5rem;
+    border: 1px solid white;
+    border-radius: 30px;
+    font-size: 20px;
+    transition: color .2s;
+    transition: border .2s;
+}
+
+.socials i:hover {
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media(max-width: 400px) {
+    body {
+        background-image: url(images/bg-mobile.svg);
+    }
+    .landing-area {
+        flex-direction: column;
+    }
+    .logo img {
+        text-align: right;
+        width: 30%;
+    }
+    .landing-area img {
+        width: 80%;
+    }
+    .landing-text {
+        text-align: center;
+        padding: 1rem;
+    }
+    .landing-text h1 {
+        font-size: 20px;
+    }
+    .socials {
+        text-align: center;
+    }
+}
